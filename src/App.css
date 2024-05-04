@@ -1,0 +1,22 @@
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  height: 100px;
+  width: 100%;
+}
+
+.marquee-content {
+  position: absolute;
+  top: 100%;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    top: 100%;
+  }
+
+  to {
+    top: 0;
+  }
+}

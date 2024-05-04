@@ -4,7 +4,7 @@ import Marquee from 'react-fast-marquee'
 
 const Home = () => {
   return (
-    <div className='flex flex-col items-center justify-center bg-slate-500 w-[450px]'>
+    <div className='flex flex-col items-center justify-center bg-slate-500 w-[450px] overflow-hidden'>
       <div className='flex justify-between items-center w-full h-16 bg-red-500'>
         <h1 className='font-bold text-2xl p-2'>Notification</h1>
         <img className='p-2' src="./vite.svg" alt="igm" />
@@ -20,14 +20,16 @@ const Home = () => {
           <li>Rathour</li>
         </ul>
       </marquee> */}
-      <Marquee pauseOnHover direction='' className="flex flex-col w-9 bg-gray-500 h-12">
-        <ul>
-          <li>ksajdfk</li>
-        </ul>
-        <ul>
-          <li>jlaskdfjlsakd</li>
-        </ul>
-      </Marquee>
+      <div className="marquee-container">
+        <div className="marquee-content">
+          <ul>
+            <li>Gaurav</li>
+            <li>Rathour</li>
+          </ul>
+          <ul>
+          </ul>
+        </div>
+      </div>
     </div>
   )
 }
